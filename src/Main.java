@@ -123,6 +123,11 @@ public class Main {
 
 
     // Problem1
+    /**
+     * Finds the minimum element in the given array.
+     * @param arr - Array of integers
+     * @return Minimum element in the array
+     */
     public static int findmin(int[] arr) {
         int minimum = Integer.MAX_VALUE;
         for (int i = 0; i < arr.length; i++) {
@@ -133,6 +138,11 @@ public class Main {
         return minimum;
     }
     //Problem2
+    /**
+     * Calculates the average of elements in the given array.
+     * @param arr - Array of integers
+     * @return Average of elements in the array
+     */
     public static double findaverage(int[] arr){
         double sum=arr[0];
         for(int i=1;i<arr.length;i++){
@@ -141,6 +151,11 @@ public class Main {
         return sum/arr.length;
     }
     //Problem3
+    /**
+     * Checks if the given number is prime.
+     * @param n - Number to check
+     * @return True if the number is prime, False otherwise
+     */
     public static boolean isPrime(int n){
         for(int i=2;i<=Math.sqrt(n);i++){
             if(n%i==0){
@@ -150,6 +165,11 @@ public class Main {
         return true;
     }
     //Problem4
+    /**
+     * Calculates the factorial of the given number.
+     * @param n - Number to calculate factorial for
+     * @return Factorial of the number
+     */
     public static int factorial(int n){
         if(n==1){
             return 1;
@@ -159,6 +179,11 @@ public class Main {
         }
     }
     //Problem5
+    /**
+ * Calculates the nth Fibonacci number recursively.
+ * @param n - Index of the Fibonacci number to be calculated
+ * @return The nth Fibonacci number
+ */
     public static int fibonacci(int n){
         if(n<=1){
             return n;
@@ -168,6 +193,12 @@ public class Main {
         }
     }
     //Problem6
+    /**
+ * Calculates the power of a number recursively.
+ * @param a - Base number
+ * @param n - Exponent
+ * @return The result of raising 'a' to the power of 'n'
+ */
     public static int findthepowerofn(int a,int n){
         if(n==0){
             return 1;
@@ -177,6 +208,12 @@ public class Main {
         }
     }
     //Problem7
+    /**
+ * Reverses an array in place recursively.
+ * @param arr - Array to be reversed
+ * @param first - Index of the first element
+ * @param last - Index of the last element
+ */
     public static void reversedArr(int[] arr, int first, int last) {
         if (first >= last) {
             return;
@@ -189,6 +226,11 @@ public class Main {
         reversedArr(arr, first + 1, last - 1);
     }
     //Problem8
+    /**
+ * Checks if a string contains only alphabetic characters recursively.
+ * @param s - String to be checked
+ * @return True if the string contains only alphabetic characters, False otherwise
+ */
     public static boolean isAlpha(String s) {
 
         if (s.isEmpty()) {
@@ -205,6 +247,12 @@ public class Main {
         return isAlpha(s.substring(1));
     }
     //problem9
+    /**
+ * Calculates the binomial coefficient recursively.
+ * @param n - Total number of items
+ * @param k - Number of items to choose
+ * @return Binomial coefficient (n choose k)
+ */
     public static int binomial(int n, int k){
         if(k == 0 || k==n){
             return 1;
@@ -214,6 +262,12 @@ public class Main {
         }
     }
     //Probelm10
+    /**
+ * Calculates the Greatest Common Divisor (GCD) of two numbers using Euclid's algorithm.
+ * @param a - First number
+ * @param b - Second number
+ * @return GCD of 'a' and 'b'
+ */
     public static int GCD(int a, int b) {
         if (b == 0)
             return a;
